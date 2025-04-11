@@ -1,9 +1,15 @@
-import example.pepita
+import miCodigo.*
 
-describe "group of tests for pepita" {
+test "el castillo mide 20 metros" {
+  assert.that(castillo.altura() == 20)
+}
 
-  test "pepita has initial energy" {
-    assert.equals(100, pepita.energy())
-  }
+test "el árbol puede cambiar de altura" {
+  tipa.altura(10)
+  assert.equals(10, tipa.altura())
+}
 
+test "El árbol puede cambiar de altura" {
+  tipa.altura(10)
+  assert.that(tipa.altura() == 10)
 }
